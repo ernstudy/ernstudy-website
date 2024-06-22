@@ -38,23 +38,24 @@ header {
   position: fixed;
   z-index: 1000;
   flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
 }
 
-.logo a {
+header .logo a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 25px;
   font-weight: 700;
 }
 
-.logo a i {
+header .logo a i {
   color: var(--main-color);
   font-size: 40px;
   vertical-align: -7px;
   margin-right: 2px;
 }
 
-.nav .ul {
+header .nav .ul {
   display: flex;
   flex-wrap: nowrap;
   gap: 2rem;
@@ -63,7 +64,7 @@ header {
   /* border: solid; */
 }
 
-.nav .ul li a {
+header .nav .ul li > a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
@@ -72,11 +73,11 @@ header {
   position: relative;
 }
 
-.nav .ul li a:hover {
+header .nav .ul li > a:hover {
   color: var(--main-color);
 }
 
-.nav .ul li a::after {
+header .nav .ul li > a::after {
   background-color: var(--main-color);
   content: "";
   left: 0;
@@ -86,16 +87,16 @@ header {
   position: absolute;
 }
 
-.nav .ul li a:hover::after {
+header .nav .ul li > a:hover::after {
   width: 100%;
 }
 
-.nav .ul li a.active {
+header .nav .ul li .active {
   position: relative;
   color: #00b3ff;
 }
 
-.nav .ul li a.active::before {
+header .nav .ul li .active::before {
   background-color: var(--main-color);
   content: "";
   left: 0;
@@ -738,29 +739,7 @@ h4 {
   font-size: 22px;
   font-weight: 600;
   opacity: 0.9;
-}
-
-.projects .tile P {
-  font-size: 15px;
-  opacity: 0.8;
-}
-
-.projects .tile .tech {
-  margin: 5px 0 10px;
-}
-
-.projects .tile .tech span {
-  color: var(--main-color);
-  font-size: 10px;
-  font-style: italic;
-  opacity: 0.7;
-  font-weight: 700;
-  border: 1px solid var(--main-color);
-  width: max-content;
-  border-radius: 5px;
-  height: max-content;
-  padding: 2px 10px;
-  background-color: #d7f3ff;
+  margin-bottom: 10px;
 }
 
 .projects .tile-links {

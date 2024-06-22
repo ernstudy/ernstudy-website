@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --text-color: #000000;
+  --font-family: "Poppins", sans-serif;
+  --main-color: #00b3ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+main {
+  padding: 0 3%;
+}
+
+.home {
+  max-width: 700px;
+  margin: 0 auto 0;
+  /* border: solid; */
+  padding-top: 100px;
+}
+
+.home .info .logo {
+  max-width: 200px;
+  background-image: url(/about-me/img/profil.png);
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: #e5f7ff;
+}
+
+.home .info .logo a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.home .info {
+  width: 100%;
+}
+
+.home .info h1 {
+  font-size: 40px;
+  opacity: 0.95;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+.home .info h2 {
+  font-size: 22px;
+  opacity: 0.9;
+  font-weight: 500;
+  color: var(--main-color);
+  margin-bottom: 3px;
+}
+
+.home p {
+  position: relative;
+}
+
+.home p::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0.1mm;
+  background-color: #ccc;
+  left: -5px;
+  top: 0;
+}
+
+.home .btn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.btn .portfolio {
+  text-decoration: none;
+  background: var(--main-color);
+  padding: 1px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn .portfolio:hover {
+  background: #3ac4ff;
+}
+
+.btn .contact {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  border-bottom: solid 1px var(--main-color);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 10px;
+  box-shadow: 1px 1px 5px -2px var(--main-color);
+}
+
+.btn a.contact:hover {
+  box-shadow: 1px 1px 8px -1px var(--main-color);
+}
+
+.home h5 {
+  font-size: 15px;
+  margin-top: 50px;
+}
+/* .btn a.contact::after {
+  background-color: var(--main-color);
+  content: "";
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+} */
+
+.home .btn i {
+  font-size: 20px;
+}
+
+/* --------------- TECHNOLOGY ---------------- */
+
+.technology {
+  max-width: 700px;
+  margin: 40px auto 20px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.heading h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.heading i {
+  color: var(--main-color);
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.skills-container {
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.skills .bxl-bootstrap {
+  color: #7612e9;
+}
+.skills .bxl-html5 {
+  color: rgb(225, 108, 5);
+}
+
+.skills .bxl-react {
+  color: #0ec2ef;
+}
+
+.skills .bxl-javascript {
+  color: rgb(203, 176, 24);
+}
+
+.skills i {
+  font-size: 80px;
+}
+
+/* --------------- Soicial networks ---------------- */
+
+.social-networks {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  text-align: center;
+}
+
+.social-networks a {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--main-color);
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.social-networks a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* -----------------MOBILE------------------- */
