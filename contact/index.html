@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="style/contact.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <title>Document</title>
   </head>
   <body>
     <!-- ---------------HEADER----------------- -->
@@ -48,16 +48,63 @@
     </header>
     <main>
       <div class="container-contact">
-        <p>
-          If you are looking for a frontend developer or need a website, contact
-          me today to discuss your project.
-
+        <div class="info">
+          <h1>Contact Details</h1>
+          <p>
+            If you are looking for a frontend developer or need a website,
+            contact me today to discuss your project.
+          </p>
           <br />
-          <br />
-          - Email Address: hey@ernstudy.com
-        </p>
+          <div class="icons">
+            <a
+              ><i class="bx bxs-chat"></i>
+              <span class="text">hey@ernstudy.com</span
+              ><i class="bx bx-copy"></i><span class="copied">copied!</span></a
+            >
+            <a
+              href="https://www.linkedin.com/in/ernst"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-linkedin-square"></i>
+              <span class="link"
+                >: https://www.linkedin.com/in/ernstudy</span
+              ></a
+            >
+            <a
+              href="http://www.facebook.com/ernstudy"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="bx bxl-facebook-square"></i>
+              <span class="link">: http://www.facebook.com/ernstudy</span></a
+            >
+          </div>
+        </div>
+        <div class="img">
+          <img src="./images/contact.svg" alt="" />
+        </div>
       </div>
     </main>
     <script src="/js/app.js"></script>
+    <script>
+      const textToCopy = document.querySelector(".text");
+      const copied = document.querySelector(".copied");
+      const copyText = document.querySelector(".bx-copy");
+      copyText.addEventListener("click", () => {
+        navigator.clipboard.writeText(textToCopy.innerHTML);
+        setTimeout(() => {
+          copyText.style.color = "gray";
+        }, 100);
+        setTimeout(() => {
+          copyText.style.color = "#00b3ff";
+        }, 1500);
+
+        setTimeout(() => {
+          copied.style.opacity = "1";
+        }, 100);
+        setTimeout(() => {
+          copied.style.opacity = "0";
+        }, 1500);
+      });
+    </script>
   </body>
 </html>

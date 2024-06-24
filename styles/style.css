@@ -81,14 +81,15 @@ header .nav .ul li > a::after {
   background-color: var(--main-color);
   content: "";
   left: 0;
-  bottom: -2px;
+  bottom: -1px;
   width: 0;
   height: 2px;
   position: absolute;
 }
 
-header .nav .ul li > a:hover::after {
-  width: 100%;
+header .nav .ul li a:hover::after {
+  width: 50%;
+  transition: ease 0.5s;
 }
 
 header .nav .ul li .active {
@@ -100,8 +101,8 @@ header .nav .ul li .active::before {
   background-color: var(--main-color);
   content: "";
   left: 0;
-  bottom: -2px;
-  width: 100%;
+  bottom: -1px;
+  width: 50%;
   height: 2px;
   position: absolute;
 }
