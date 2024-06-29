@@ -262,7 +262,7 @@ header .menu i {
 
 .my-ebooks .cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 400px));
+  grid-template-columns: repeat(3, minmax(300px, 400px));
   grid-template-rows: repeat(1, auto);
   grid-gap: 2rem;
   overflow-y: scroll;
@@ -288,6 +288,11 @@ header .menu i {
   margin-bottom: 10px;
   margin-left: 12px;
   color: var(--text-color);
+}
+
+.my-ebooks .cards h3 img {
+  width: 28px;
+  vertical-align: middle;
 }
 
 .my-ebooks .cards a {
