@@ -878,7 +878,7 @@ h4 {
 
 @media (max-width: 400px) {
   .my-ebooks .cards {
-    grid-template-columns: repeat(2, minmax(250px, 350px));
+    grid-template-columns: repeat(3, minmax(250px, 350px));
   }
 
   .profile-container {
